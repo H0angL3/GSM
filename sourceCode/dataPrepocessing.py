@@ -2,7 +2,7 @@
 lua chon cac dan trung sau: srcIP,srcPort, dstIP, dstPort, state, sTOS,
         bytePerPkt, avgByte = totalByte/duration, avgPkt = totalPKTs/duration, label
 xu li du lieu trong cac file ctu: 1, 3, 4, 5 --> training set:
-    input  {srcIP, srcPort, state,sTOS, srcPort, bytePerPkt ,avgPkt, avgByte}
+    input  {srcPort, state,sTOS, dstIP,dstPort, bytePerPkt ,avgPkt, avgByte}
     output {label (da xy li)} ::: label co 2 loai: normal va botnet
 xu li du lieu trong cac file 2, 6 --> testing set
 khong xu li mot so loai netflow nhu ipv6-icmp
